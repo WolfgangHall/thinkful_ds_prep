@@ -1,0 +1,115 @@
+Choosing the Right Visualization
+- Line graphs are great for tracing out trajectory over time
+- scatter plots show the relationship between 2 variables
+
+
+
+Statistics for Data Science
+- the collection, analysis, and interpretation of data
+
+
+
+Summarizing Data
+- going from large datasets to compact summaries that are easily understood
+- larger groups of interest, called populations
+- how statistics are used to summarize different aspect of a dataset
+
+
+
+Population vs Sample
+- impossible to get data from all members of a population
+- randomly extract a subset from the population, a sample
+    - can study samples to learn about population as a whole
+- take data about a sample and reduce the complexity of the data
+    - make accurate summaries --> that's statistics
+- infer info from a sample about the entire population
+
+
+
+Measures of Central Tendency
+- can describe either an individual variable or the relationships among two or more variables
+- a variable represents information about a particular measurable concept
+- each measurement within a variable is called a datapoint
+
+Two characteristics of most interest are the central tendency and the variance
+
+
+Central Tendency
+- describes a point around which datapoints in a variable cluster
+- the mean, the median, and the mode
+
+    Mean
+        - represents the average value within a variable
+        - sum of the individual datapoints in a variable x divided by the total number of values in a variable n
+
+        >>> mean = sum(x) / n
+
+    Median
+        - represents the middle value in a variable, values ordered from least to greatest
+        - if there is an odd number of values -> take middle number
+        - if there is an even number of values -> average of two middle numbers
+        - not sensitive to extreme values, fewer uses
+
+    Mode
+        - value in variable that occurs the most
+
+    Mean, median and mode are unbiased estimates
+
+    An estimate is "unbiased" if, across multiple representative samples, the sample estimates converge on the population value
+    A "biased" estimate would converge on a value that was either higher or lower than the population value
+
+
+
+Variance
+    - variance of a variable describes how much values differ from the central tendency
+    - how much they differ from each other
+    - if the values in a variable are close to the central tendency, variance is low
+    - if the values in a variable vary widely, variance is high
+
+    - gives a clue to how valuable each individual datapoint is
+    - if variance is low, the datapoints provide little new info
+    - if variance is high, each inidividual data points provide unique info
+
+    - why are things different from each other?
+        - why is this store's profit margin higher?
+        - why are these side effects lower than others?
+    - provides information about differences between observations that can be used to understand and predict future outcomes
+
+    Variance (v) is measured as the sum of the squared difference of each individual datapoint (x) from the mean(mean), divided by the number of datapoints (n) minus 1
+        >>> v = sum((x - mean) ** 2) / (n - 1)
+
+        - why is difference between x and mean squared?
+            squaring the differences makes all values positive
+        - why divide by n - 1 and not n?
+            dividing by n would underestimate the population variance, creating bias
+        np.var(df['age'])
+
+
+
+    Standard Deviation
+        - most common estimate of variability
+        - square root of the variance, standard deviation
+        >>> s = v ** 0.5
+
+        by default, np.std() calculates population standard deviation (divides by n)
+            - you need to set the ddof value to calculate the sample standard deviation (divide by n - 1)
+
+        #numpy
+        np.std(df['age'], ddof=1)
+
+
+    Standard Error
+        - standard error quantifies uncertainty in the estimate of the sample mean
+        - standard deviation tells of variance in population, standard error tells about the precision of our sample mean estimate
+        - margin of error in poll results
+        - smaller standard errors mean more precise estimates
+
+        formula for standard error (se) of the mean
+            -> standard deviation of the sample (s)
+                -> divided by the square root of the sample size (n)
+        >>> se = s / (n ** 0.5)
+
+        # in python
+        np.std(df['age'], ddof=1) / np.sqrt(len(df['age']))
+
+        - estimates become more precise (standard errors get smaller) when sample sizes get larger
