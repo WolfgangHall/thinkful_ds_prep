@@ -1,0 +1,56 @@
+Independence and Dependence
+
+- when talking about probabilities, always consider whether the events are independent or dependent of one another
+
+independent
+    -> an event is independent of other events in the sample if the outcome of that event is not affected by the outcome of other events in the sample space
+        -> picking a marble out of 10 AND putting it back
+            -> because marble is put back, drawing probabilities are still the same
+
+    -> probability of two or more independent events can be calculated by multiplying the probabilities of each individual event
+
+    10 marbles => 5 red, 5 blue
+    1/2 chance of red
+    1/2 chance of blue
+    Chance of drawing a red marble then a blue marble:
+        1/2 * 1/2 = 1/4
+
+
+dependent
+    -> when the probability of event B changed based on the outcome of Event A
+        -> event B is dependent or conditional on event A
+    -> use a | (pipe) to denote conditionals
+
+    10 marbles => 5 red, 5 blue
+    5/10 chance of red
+    5/9 chance of blue
+
+    The probability of red given blue
+    P(red | blue) = 5/9
+
+    if first marble was blue, probability of drawing a blue marble again is 4/9
+    P(blue | blue) = 4/9
+    probability of drawing blue again is conditional on drawing blue the first time
+
+    probability of two conditional events
+        -> calculated by multiplying the probability of event A by the probability of event B conditioned on  A
+    P(A n B) = P(A) * P(B | A)
+
+    probability of drawing two blues
+    P(blue n blue) = P(blue) * P(blue |blue)
+             = 5/10 * 4/9
+             = 2/9
+
+    probability of drawing red then blue
+    P(red n blue) = P(red) * P(red | blue)
+                  = 5/10  * 5/9
+                  = 5/18
+
+    in data, conditional variables contribute less data than independent variables
+        -> some information is duplicated among conditional variables
+
+        if we can find the answer to another set of data based on another piece of data
+            -> did you buy any widgets?
+                - if the answer is no then we already know they spent 0 dollars on widgets
+            -> how much did you spend on widgets?
+                -> if the answer is 0, then we already know they did not buy widgets

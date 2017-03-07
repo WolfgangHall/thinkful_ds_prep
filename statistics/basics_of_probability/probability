@@ -1,0 +1,18 @@
+Basics of Probability
+
+Perspectives on Probability
+    - probability -> way of quantifying the likelihood of a future outcome
+    - two broad schools of thought
+        1. frequentist school
+            -> defines probability as describing how often outcome A would occur in an experiment if that experiment were repeated over and over
+                -> tossing a coin and landing on heads has a 50% outcome over many coin flips
+
+        2. Bayesian school
+            -> defines probability as describing how likely an observer expects outcome A to be in the future, based on previous experience and expert knowledge
+                -> each time experiment is run and new data is added, the belief about the outcome is changed
+                -> prior probability -> based on previous experiences
+                -> posterior probability -> updated probability based on latest experiment
+
+    - frequentists are trying to calculate the likelihood of getting the data you have in the context of a fixed, if unknown, 'true', population value
+    - bayesians are trying to calculate the most likely population value, given the data you have
+        -> as the data changes, Bayesians beliefs about the population value change as well

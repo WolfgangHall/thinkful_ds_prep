@@ -1,0 +1,30 @@
+Randomness, Sampling and Selection Bias
+
+- quantify uncertainty
+    -> 'maybe it will rain' to '65% chance'
+    -> not only defines what is known, but how confident we can be about that knowledge
+
+- probability is the basis of Randomness
+    -> Randomness -> a situation where all possible outcomes are equally likely
+
+- data scientists leverage the concept of randomness to gather a representative sample from the population
+    -> using randomness, each element of a population has an equal chance of being chosen for the sample
+
+Larger samples are more likely to resemble the population
+    -> less likely to be swayed by occasional extreme values
+
+Smaller samples are cheaper and faster to collect
+
+The more variability in the population, the larger sample we need to get to be confident that our sample is a good stand-in for the population
+
+-> however, samples are random, so through luck the sample may be a poor representation
+
+Selection bias
+    -> systematic difference between the sample and the population
+    -> if sample individuals differ from the others in important ways
+        -> spending rates, purchasing behavior
+        -> knowledge gained, will not necessarily apply to all customers
+
+Better to have a small but representative sample than a large, biased one
+
+    
