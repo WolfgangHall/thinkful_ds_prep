@@ -1,0 +1,7 @@
+If I choose a door and the host reveals one of the other two doors is a dud, does it matter if I actually change?
+When initially picking a door you have a 1 in 3 chance of getting a prize.
+Meaning there is a 2 in 3 chance that you are wrong.
+If the host reveals that one of the other two doors is a dud, it ceases to be a 2/3 chance and becomes a 1/2 chance at getting a prize.
+Therefore, I don't think it actually matters.
+The Bayes Theorem is probably connected because the opening of another door changes the probability conditionally.
+If another door is opened, and the first door you picked is still at a 1/3 chance, the extra 2/3 is shifted to the remaining door, thus you should switch.
