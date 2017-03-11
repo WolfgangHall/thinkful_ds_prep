@@ -1,0 +1,9 @@
+from collections import Counter
+
+def mode_(input_):
+  list_ = list(input_) # converts everything to a list
+  sorteddictionary = Counter(list_).most_common() # counts and creates an ordered dictionary
+  if (sorteddictionary[0][1] == sorteddictionary[1][1]):
+  mode = []
+  else:
+  mode = sorteddictionary[0][0]

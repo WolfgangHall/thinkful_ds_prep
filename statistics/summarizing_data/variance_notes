@@ -63,7 +63,7 @@ Central Tendency
 Variance
     - variance of a variable describes how much values differ from the central tendency
     - how much they differ from each other
-    - if the values in a variable are close to the central tendency,  is low
+    - if the values in a variable are close to the central tendency, variance is low
     - if the values in a variable vary widely, variance is high
 
     - gives a clue to how valuable each individual datapoint is

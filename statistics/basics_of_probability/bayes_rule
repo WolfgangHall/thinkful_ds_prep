@@ -5,7 +5,7 @@ Conditional Probability
     - Say you have x disease that infects 1 in 1,000,000
     - test says it's 99.99% accurate
     - 100 people are expected to get positive results
-    - only 1 person out 101 actually has the infection
+    - only 1 person out 100 actually has the infection
         - 1% chance you are infected
 
     - Bayes' rules gives this relationship in terms of probabilities

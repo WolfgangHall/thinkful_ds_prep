@@ -17,7 +17,7 @@ independent
 
 
 dependent
-    -> when the probability of event B changed based on the outcome of Event A
+    -> when the probability of event B changes based on the outcome of Event A
         -> event B is dependent or conditional on event A
     -> use a | (pipe) to denote conditionals
 

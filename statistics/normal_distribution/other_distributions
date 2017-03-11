@@ -1,0 +1,48 @@
+Many other probability distributions
+
+Bernoulli
+    -> represents two possible outcomes of an event
+    -> summarized by p
+        -> the probability of the outcome k
+
+    probability mass function for Bernoulli distribution:
+        https://www.screencast.com/t/3Tp8wzfjr
+
+        -> when a distribution is discrete(only takes integers)
+            -> probability mass function
+        -> when a distribution is continuous
+            -> probability density function
+
+
+
+Binomial
+    -> binomial distribution counts the number of successes when an event with two possible outcomes is repeated many times (like many coin flips)
+        -> summarized by p, the probability of getting k successes during n repetitions of the event
+
+        probability mass function:
+            https://www.screencast.com/t/xNraELLpA
+
+
+Gamma
+    -> gamma distribution represents the time until an event, when the event starts out likely, then becomes more likely, then becomes more unlikely again
+        -> lifespan until death
+            -> not likely at young age
+            -> more likely as time goes
+            -> less likely as many do not make it to extreme old age
+
+        probability density function:
+            https://www.screencast.com/t/CoiMdC6U
+
+
+Poisson
+    -> poisson distribution represents the number of times a given event will occur during a given time interval, based on a count of the number of times an event occurs during a given time period
+        -> lambda is the rate that events occur during a given time period
+
+        probability mass function:
+            https://www.screencast.com/t/y4bdHupCaJAC
+
+
+
+Conditional Distribution
+
+    -> distributions can be conditional

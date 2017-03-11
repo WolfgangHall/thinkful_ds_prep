@@ -1,0 +1,30 @@
+Deviations from normality and descriptive statistics
+
+Real Data is never perfectly normal
+
+when statistics assume normality and are used on non-normal data, inaccurate conclusions can be made
+
+best method of deciding if data is normal is visual inspection
+    -> histograms
+    -> quantile-quantile (QQ) plots
+
+QQ plots
+    -> graph a variable with an unknown distribution against a variable with a known distribution
+
+    -> values for each variable are sorted into ascending order, then plotted against each other
+        -> known variable is x-axis
+        -> unknown variable is y-axis
+
+    -> if mystery data has same distribution as known variable
+        -> result is a straight line from lower left to upper right
+        -> deviations indicate a lack of distribution fit
+
+** refer to deviations_from_normal_dists.ipynb
+
+- with a QQ plot, the scales of the known and unknown variables do not have to match
+- the relationship between data points matters
+
+- when data are not normal, the mean and standard deviation are no longer accurate or informative summaries
+
+
+Asymmetric probability distributions are described as 'skewed'

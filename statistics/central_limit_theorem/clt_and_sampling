@@ -1,0 +1,15 @@
+The central limit theorem shows that normal distributions can still be used to analyze samples of data from non-normally distributed populations
+
+when sampling from a population
+    -> as the sample size gets larger
+        -> the sample means tend to follow a normal probability distribution
+        -> clusters around the true population mean
+
+    statistics can be calculated and population parameters can be estimated
+        -> even when the distribution is unknown
+
+
+statistics are used to discover info about populations
+    -> need to be comfortable calculating statistics when we know little about a population
+
+the CLT unlocks the door to the statistic (central tendency and variance) that we have learned about

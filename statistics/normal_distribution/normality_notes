@@ -1,0 +1,23 @@
+Define Normality
+
+- data is described as 'normal' or 'normally distributed'
+    - if most values cluster in the center of the range
+    - rest tapers of symmetrically to the left and the right
+
+    - the mean and the median of a normally distributed variable are equal
+
+    Euler's Number
+        -> e = 2.71828
+
+    - approximately 68% of values in a normally-distributed variable fall within 1 standard deviation above or below the mean
+    - 95% fall within two standard deviations
+    - 99.7% fall within three standard deviations
+
+    **refer to std_plot.py
+
+Normal distribution is useful because:
+
+        -> easily summarized using two statistics
+        -> area under curve is 1, makes it easy to calculate probabilities
+        -> describes natural phenomena -> blood pressure, height, weight
+        -> commons scores (percentiles, z-scores) and statistical tests assume normal dists

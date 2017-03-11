@@ -1,0 +1,49 @@
+- compare the means of two samples, taken from two populations
+    - calculate the means and the standard deviations of each sample
+    - subtract one mean from the other
+
+        - look at the size of the difference
+            - in the context of the combined variance of the two samples
+
+        - the larger the difference is relative to the variance
+            -> the less likely the difference is to be due to random chance
+            -> the more likely it is to reflect meaningful differences between the two populations
+
+- to combine variances
+    -> the squared standard deviations are divided by the sample size
+        -> and summed
+            -> take square root of the sum
+- this is the standard error of the difference
+    -> represents the variance in the sample differences around the population
+
+
+- the difference divided by the standard error is a ration
+    -> called the t-value
+- T-values put the difference in context
+    -> tell us how large the difference is relative to the amount of variance in data
+        -> amount of variance is called noise
+
+- Given a t-value we can calculate the probability that a t-value at least this extreme would occur by chance
+    -> called a p-value
+- tells us how likely it is that we would get the sampling data we observe if the two population means were not different
+
+- p-value runs between 0 and 1
+    -> 0 -> it is impossible to get a difference of this size or greater in the absence of a real population difference
+    -> 1 -> we will Always get a difference of this size or greater in the absence of a real population difference
+
+    -> the lower the p-value, the more confidently you can conclude that there is a meaningful difference between the means of the two groups of population
+
+
+- The t-value scales the difference between the two groups by the amount of variance in the two samples.
+
+
+-  High variability in samples can lead to groups with means that look very different,
+    - but when we look at the histogram we see that most of the values in the sample groups overlap.
+
+- interpret a t-value as the number of standard errors worth of space separating the group means 
+    - A t-value of 2 would indicate that the means are two standard errors apart
+
+- p-value is likelihood of getting a difference this large or larger in the samples if the populations were not different
+    - the smaller the p-value, the more likely the difference we see in the samples meaningfully reflects the population
+
+    - if p-value is small, you can be fairly confident that the difference in means is due to a real difference in population, and not due to variability in the samples
