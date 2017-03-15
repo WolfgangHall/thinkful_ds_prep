@@ -1,1 +1,39 @@
 The p-value is the chance that the results you are looking at happened by random chance and not as a result of whatever you are testing.
+
+
+histogram -> probability density
+
+
+compare dataset to standard distribution
+
+t-value tries to measure data and normal distributions distance
+    -> doesn't tell you anything unless statistically significant
+        -> p-value checks for significance
+
+        if p-value is above a certain threshold, you can accept it or not
+
+        check to see if two data samples are not from the same population
+
+        whatever you try to prove, test the p-value
+        you always try to reject the alternate hypothesis
+
+
+
+t-values quantify how close samples are
+
+
+
+p-value
+
+
+
+standard -> relaxed .05
+         -> standard .01
+
+
+t-value quantifies
+p-value makes the decision
+
+
+
+redo drill on  descriptive statistics
